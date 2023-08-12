@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #76c3d4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.calculator{
+    background: #334257; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+.calculator form input{
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+    background: #55677d; 
+    font-size: 20px;
+    cursor: pointer;
+    margin: 10px;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.calculator form input:hover {
+    background-color: #6b7f96; 
+}
+
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
+form .display input{
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+    background: #334257; 
+    border: none;
+    color: #fff;
+}
+
+form input.equal{
+    padding: 0 20px;
+    width: 145px;
+    background-color: #6b7f96;
+    transition: none; 
+}
+form input.equal:hover {
+    background-color: #6b7f96; 
+}
+
+form input.operator{
+    color: #dfdf8c;
+}
+
+/* Improved responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .calculator {
+        padding: 15px;
+    }
+
+    .calculator form input {
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+        margin: 8px;
+    }
+
+    form .display input {
+        font-size: 36px;
+    }
+}
